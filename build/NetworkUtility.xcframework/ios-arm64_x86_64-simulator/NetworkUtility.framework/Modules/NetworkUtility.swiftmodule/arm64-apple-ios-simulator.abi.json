@@ -1,0 +1,268 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkUtility",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkUtilityiOS",
+        "printedName": "NetworkUtilityiOS",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkUtilityiOS",
+                "printedName": "NetworkUtility.NetworkUtilityiOS",
+                "usr": "s:14NetworkUtility0A10UtilityiOSC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14NetworkUtility0A10UtilityiOSC6sharedACvpZ",
+            "mangledName": "$s14NetworkUtility0A10UtilityiOSC6sharedACvpZ",
+            "moduleName": "NetworkUtility",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkUtilityiOS",
+                    "printedName": "NetworkUtility.NetworkUtilityiOS",
+                    "usr": "s:14NetworkUtility0A10UtilityiOSC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14NetworkUtility0A10UtilityiOSC6sharedACvgZ",
+                "mangledName": "$s14NetworkUtility0A10UtilityiOSC6sharedACvgZ",
+                "moduleName": "NetworkUtility",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(urlRequest:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14NetworkUtility0A10UtilityiOSC7request10urlRequestx10Foundation10URLRequestV_tYaKSeRzlF",
+            "mangledName": "$s14NetworkUtility0A10UtilityiOSC7request10urlRequestx10Foundation10URLRequestV_tYaKSeRzlF",
+            "moduleName": "NetworkUtility",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14NetworkUtility0A10UtilityiOSC",
+        "mangledName": "$s14NetworkUtility0A10UtilityiOSC",
+        "moduleName": "NetworkUtility",
+        "intro_iOS": "15.0",
+        "declAttributes": [
+          "AccessControl",
+          "Available"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkUtility",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkError",
+        "printedName": "NetworkError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "invalidResponse",
+            "printedName": "invalidResponse",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkUtility.NetworkError.Type) -> NetworkUtility.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkError",
+                    "printedName": "NetworkUtility.NetworkError",
+                    "usr": "s:14NetworkUtility0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkUtility.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkUtility.NetworkError",
+                        "usr": "s:14NetworkUtility0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14NetworkUtility0A5ErrorO15invalidResponseyA2CmF",
+            "mangledName": "$s14NetworkUtility0A5ErrorO15invalidResponseyA2CmF",
+            "moduleName": "NetworkUtility"
+          },
+          {
+            "kind": "Var",
+            "name": "network",
+            "printedName": "network",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkUtility.NetworkError.Type) -> (Swift.Error?) -> NetworkUtility.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Error?) -> NetworkUtility.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkUtility.NetworkError",
+                        "usr": "s:14NetworkUtility0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkUtility.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "NetworkUtility.NetworkError",
+                        "usr": "s:14NetworkUtility0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14NetworkUtility0A5ErrorO7networkyACs0C0_pSgcACmF",
+            "mangledName": "$s14NetworkUtility0A5ErrorO7networkyACs0C0_pSgcACmF",
+            "moduleName": "NetworkUtility"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14NetworkUtility0A5ErrorO",
+        "mangledName": "$s14NetworkUtility0A5ErrorO",
+        "moduleName": "NetworkUtility",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/koushik\/Desktop\/NetworkUtility\/NetworkUtility\/NetworkUtilityiOS.swift",
+      "kind": "IntegerLiteral",
+      "offset": 512,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/koushik\/Desktop\/NetworkUtility\/NetworkUtility\/NetworkUtilityiOS.swift",
+      "kind": "IntegerLiteral",
+      "offset": 518,
+      "length": 3,
+      "value": "299"
+    }
+  ]
+}

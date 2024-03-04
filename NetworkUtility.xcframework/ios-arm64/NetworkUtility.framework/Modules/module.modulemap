@@ -1,0 +1,11 @@
+framework module NetworkUtility {
+  umbrella header "NetworkUtility.h"
+  export *
+
+  module * { export * }
+}
+
+module NetworkUtility.Swift {
+  header "NetworkUtility-Swift.h"
+  requires objc
+}
